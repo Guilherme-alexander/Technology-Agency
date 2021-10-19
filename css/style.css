@@ -1,0 +1,772 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/* Class Auxiliares */
+.container{
+    max-width:1280px;
+    margin:0 auto;
+    padding:0 2%;
+}
+
+/* boot Css width% */
+.w60{
+    width:60%;
+    float:left;
+}
+.w50{
+    width:50%;
+    float:left;
+}
+.w40{
+    width:40%;
+    float:left;
+}
+.w33{
+    width:33.3%;
+    float:left;
+}
+/*****/
+
+.center{
+    text-align:center;
+}
+
+.clear{clear: both;}
+
+/* header */
+header{
+    width: 100%;
+    height:80px;
+    padding:25px 0;
+}
+
+.logo{
+    float:left;
+}
+
+.logo h2{
+    font-size:23px;
+    font-weight:normal;
+    color: #000;
+}
+
+.logo span{
+    color:#0094FF;
+}
+/* menu mobile */
+nav.menu-mobile{
+    display:none;
+    float:right;
+}
+nav.menu-mobile h2{cursor:pointer;}
+
+nav.menu-mobile ul{
+    display:none;
+    width:100%;
+    background-color: white;
+    position:absolute;
+    top:60px;
+    left:0;
+    z-index:999;
+    text-align:center;
+}
+nav.menu-mobile li{
+    padding:8px 0;
+    border-bottom:1px solid #ccc;
+}
+nav.menu-mobile li a{
+    color:#000;
+    font-size:18px;
+    display: block;
+    text-decoration:none;
+}
+nav.menu-mobile li#selec a{
+    color:#0094FF;
+    text-decoration:underline;
+}
+nav.menu-mobile li:hover{
+    background-color: #ccc;
+    text-decoration:underline;
+}
+
+/* menu desktop */
+nav.menu-desktop{
+    float:right;
+}
+
+nav.menu-desktop ul{
+    position: relative;
+    top:10px;
+}
+
+nav.menu-desktop li{
+    padding:0 15px;
+    font-weight:lighter;
+    display: inline-block;
+}
+
+nav.menu-desktop a{
+    color:black;
+    text-decoration:none;
+}
+
+nav.menu-desktop li#selec a{
+    font-weight:bold;
+    color:#0094FF;
+    text-decoration: underline;
+}
+
+nav.menu-desktop a:hover{
+    text-decoration:underline;
+}
+/* section Main */
+section.main-bg{
+    width:100%;
+    padding:140px 0 200px 0;
+    position:relative;
+    background-image:url('../imagens/bg.jpeg');
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+section.main-bg > .container{
+    position: relative;
+    z-index:2;
+}
+div.btn-center{
+    width:100%;
+    margin-top:30px;
+    position: relative;
+}
+
+section.main-bg .container div > button{
+    transform:translate(-50%,-50%);
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top:10px; 
+}
+
+.overlay{
+    z-index:1;
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    left:0;
+    top:0;
+}   
+
+section.main-bg h2{
+    text-align:center;
+    font-weight:normal;
+    font-size:27px;
+    color:#0094FF;
+}
+section.main-bg p{
+    text-align:left;
+    font-weight:300;
+    color:white;
+    font-size:17px;
+    margin-top:15px;
+}
+
+section.diferenciais{
+    padding:30px 0;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.line-text{
+    position: relative;
+    display: inline-block;
+    color:#0094FF;
+    padding:10px;
+}
+
+.line-text > div{
+    position: absolute;
+    top:0;
+    left:5;
+    width:140px;
+    height:3px;
+    background-color:#0094FF;
+}
+
+.line-text h2{
+    font-weight:normal;
+    font-size:27px;
+}
+
+.icones-diferenciais{
+    margin-top:30px;
+}
+
+.box-icone-single{
+    float:left;
+    padding:0 15px;
+    width:33.3%;
+}
+
+.box-icone-single img{
+    width:120px;
+    margin:15px 0;
+}
+
+.box-icone-single p{
+    margin-top:5px;
+    font-size:15px;
+    color:#585858;
+}
+
+section.sobre-equipe{
+    padding:30px 0;
+    background-color: #ebebeb;
+}
+
+section.sobre-equipe > .container{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.equipe-container{
+    width:50%;
+}
+.avatar-box{
+    margin-top:10px;
+    margin-bottom:30px;
+}
+
+.sobre-container{
+    width:50%;
+}
+
+.sobre-container p{
+    margin-top:20px;
+    font-size:15px;
+    line-height:25px;
+    color:#585858;
+}
+
+.img-avatar{
+    display:inline-block;
+    position: relative;
+    top:15px;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background-size:cover;
+}
+
+.descricao-avatar{
+    padding:0 10px;
+    width:calc(100% - 70px);
+    display: inline-block;
+}
+
+.descricao-avatar h3{
+    font-weight:normal;
+    font-style:italic;
+    color:rgb(30,30,30);
+}
+
+.descricao-avatar p{
+    font-weight:300;
+    font-size:15px;
+    font-style: italic;
+    color:rgb(30,30,30);
+}
+
+button{
+    width:120px;
+    height:45px;
+    font-size:16px;
+    margin-top:15px;
+    border:0;
+    color:white;
+    background-color: #0094FF;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #003A64;
+}
+
+section.inscricao{
+    background-color: #003A64;
+    padding:20px 0;
+}
+
+h2.inscricao-texto{
+    font-weight:normal;
+    margin-top:5px;
+    font-size:25px;
+    color: white;
+}
+
+.inscricao-form input[type=text]{
+    width:calc(100% - 150px);
+    height:39px;
+    background:white;
+    font-size:18px;
+    outline:none;
+    border:1px solid #ccc;
+    display:inline-block;
+}
+
+.inscricao-form input[type=submit]{
+    width:120px;
+    height:40px;
+    border:0;
+    font-size:16px;
+    background:#0094FF;
+    color:white;
+    cursor:pointer;
+    font-weight: bold;
+    display:inline-block;
+}
+
+section.cards{
+   padding:30px 0;
+}
+
+.card-single{
+    width:33.3%;
+    float:left;
+    padding:30px;
+}
+
+.card-single img{
+    width:100%;
+    min-height:280px;
+    object-fit: cover;
+}
+
+.card-single h3{
+    font-size:18px;
+    font-weight:normal;
+    padding:5px 0 5px 0;
+}
+
+.card-single p{
+    padding:5px 0 15px 0;
+    font-weight:300;
+    border-bottom:2px solid #C4C4C4;
+}
+/* footer */
+footer.footer1{
+    padding:20px 0 45px 0;
+    background-color: #0094FF;
+    color:white;
+}
+.footer1 h2{
+    font-weight:normal;
+    font-size:23px;
+}
+
+.footer1 p{
+    font-weight:normal;
+    margin-top:15px;
+}
+
+.footer1 a{
+    display:block;
+    margin-top:15px;
+    color: white;
+}
+
+div.footer-img{
+    display: flex;
+}
+
+.footer1 img{
+    width:30px;
+    height:30px;
+    margin:0 10px;
+}
+footer.footer2{
+    text-align: center;
+    background-color: #003A64;
+    color:white;
+    font-size:20px;
+    padding:15px 0;
+}
+
+
+
+/***** Pagína Sobre *****/
+section.title-page{
+    width:100%;
+    padding:30px;
+    min-height:200px;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    position: relative;
+}
+
+section.title-page h2{
+    font-size:31px;
+    margin-top:15px;
+    font-weight:normal;
+    color:#0094FF;
+}
+section.title-page p{
+    font-weight:300;
+    margin-top:10px;
+    color:#fff;
+}
+
+/* para ficar Por cima */
+section.title-page > .container{
+    position: relative;
+    z-index:101;
+}
+.overlay__title-page{
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:100;
+}
+
+section.sobre__noticia{
+    padding:30px 0;
+}
+
+.sobre__single__noticia img{
+    max-width:100%;
+    width:50%;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    float:left;
+}
+
+.sobre__single__noticia p{
+    width:50%;
+    line-height:23px;
+    padding:10px 15px;
+    margin-bottom:10px;
+    font-weight:300;
+    float:right;
+}
+
+.text__single p{
+    width:100%;
+    line-height:23px;
+    padding:10px 0;
+    font-weight:300;
+}
+
+/* efeito paralax */
+
+section.parallax{
+    padding: 30px 0;
+    width:100%;
+    min-height:200px;
+    background-image:url(../imagens/img7.jpg);
+    background-size:cover;
+    background-position:top;
+    background-attachment:fixed;
+    text-align: center;
+    position: relative;
+}
+
+section.parallax > .container{
+    position: relative;
+    z-index:101;
+}
+
+section.parallax h2{
+    border:1px solid #0094FF;
+    color: #0094ff;
+    padding:5px 25px;
+    font-size:25px;
+    display:inline-block;
+}
+section.parallax h2:hover{
+    background-color: #0094FF;
+    color: white;
+}
+section.parallax p{
+    margin-top:15px;
+    color: white;
+    font-size:20px;
+    font-weight:300;
+}
+
+section.equipe{
+    padding:40px 0;
+}
+
+.equipe-circles{
+    margin-top:50px;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.equipe-circle-single{
+    text-align: center;
+    width:33.3%;
+    padding:0 20px;
+}
+
+.equipe-circle-single h3{
+    font-weight:normal;
+    font-size: 23px;
+    margin-top:8px;
+}
+
+.equipe-circle-single p{
+    font-weight:300;
+}
+
+.avatar-single{
+    position: relative;
+    width:60%;
+    padding-top:60%;
+    margin:0 auto;
+    
+}
+
+.avatar-single-container{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+section.sobre__final{
+    padding:20px 0;
+    background:#ebebeb;
+    border-top:2px solid #cccccc;
+}
+
+section.sobre__final p{
+    margin-top:10px;
+    font-weight:300;
+    line-height:25px;
+    color:#585858;
+}
+
+.card-text {
+    position:relative;
+    margin-top:10px;
+    width:80%;
+}
+
+.card-text img{
+    max-width:100%;
+}
+
+.card-text h3{
+    position: absolute;
+    right:10px;
+    bottom:10px;
+    font-weight:300;
+    font-size:20px;
+    color:white;
+}
+
+
+/* Contato */
+section.contato{
+    padding:30px 0;
+    min-height:474px;
+}
+
+section.contato .w50,
+section.contato .w100{
+    padding: 0 10px;
+}
+.formulario form{
+    margin-top:50px;
+}
+.formulario h2{
+    color: #919191;
+    background:#ebebeb;
+    text-align:center;
+    font-size:17px;
+    padding:4px 0;
+    border-left:5px solid #ccc;
+}
+
+.formulario input[type=text],
+.formulario input[type=email]{
+    width:100%;
+    height:40px;
+    padding-left:8px;
+    outline:none;
+    border:1px solid #ccc;
+    margin-bottom:15px;
+}
+
+.formulario textarea{
+    width:100%;
+    height:150px;
+    padding:10px;
+    border:1px solid #ccc;
+    margin-bottom:10px;
+    outline:none;
+    resize: none;
+    overflow-y:scroll auto;
+}
+
+.tags-form{
+    margin-top:50px;
+    padding-left:50px;
+}
+
+.tags-form i.fa-comment{
+    position: relative;
+    top:-3px;
+    margin:2px;
+}
+
+.tags-form h2{
+    font-weight:400;   
+}
+
+.tags-form p{
+    font-weight:300;
+}
+
+.tags-form p.tag-contato{
+    text-align:center;
+    font-weight:normal;
+    margin-top:6px;
+    padding:8px 4px;
+    color:white;
+    background-color:#0094FF;
+}
+
+.tags-form i{
+    position: relative;
+    top:3px;
+    font-size:20px;
+}
+
+
+
+
+
+
+/***** Reaponsivo *****/
+@media screen and (max-width:768px){
+    .box-icone-single{
+        width:100%;
+    }
+    .equipe-container{
+        width:100%;
+    }
+    .sobre-container{
+        width:100%;
+        margin-top:20px;
+    }
+
+    button{
+        position: relative;
+        left:35%;
+        margin:10px;
+
+    }
+    .w50,.w40,.w60,.w100{
+        width:100%;
+        margin-bottom:20px;
+    }
+    .card-single{
+        width:100%;
+        float:none;
+        padding:40px;
+    }
+    .w33{
+        width:100%;
+        text-align: center;
+        margin:10px 0;
+        padding:8px 0;
+
+    }
+    div.footer-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sobre__single__noticia img{
+        width:100%;
+    }
+    
+    .sobre__single__noticia p{
+        width:100%;
+    }
+
+    .formulario input[type=text],
+    .formulario input[type=email]{
+        margin-bottom:0px;
+    }
+
+    .formulario textarea{
+        margin-bottom:0px;
+    
+    }
+
+    .tags-form{
+        padding-left:0px;
+    }
+
+
+}
+
+@media screen and (max-width:987px){
+    .card-single img{
+        width:100%;
+        min-height:150px;
+        object-fit: cover;
+    }
+    .sobre-card-single{
+        width:100%;
+        float:none;
+        padding:30px;
+        text-align: center;
+   }
+   .sobre-card-single img{
+        width:300px;
+        height:300px;
+        max-height:350px ;
+        border-radius:50%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width:600px){
+    nav.menu-desktop{display:none;}
+    /* menu mobile */
+    nav.menu-mobile{
+        display:block;
+    }
+    nav.menu-mobile ul{
+        display:none;
+    }
+    .equipe-circle-single{
+        text-align: center;
+        width:100%;
+        padding:0 10px;
+        margin-bottom:20px;
+    }
+
+    .card-text {width:100%;}
+    
+}
